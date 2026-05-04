@@ -11,8 +11,9 @@ Identidade Visual:
 
     Paleta de Cores Utilizada para a Marca:
 
-        #fabc3c;
-        #ffb238;
-        #f19143;
-        #ff773d;
-        #f55536;
+        #FFF1D0;
+        #F0C808;
+        #07A0C3;
+        #086788;
+        
+       

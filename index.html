@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>DaschPet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,44 +18,32 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="./style.css" />
-    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" href="./scr/css/style.css" />
   </head>
   <body>
     <header>
-      <div class="container_cabecalho">
+      <nav class="navbar">
         <img
-          src="./assets/Logotipo.svg"
-          width="75"
+          src="./scr/img/Logotipo.svg"
           alt="Logotipo da empresa DaschPet, contém a palavra DaschPet e a representação de um Dachshund - Cachorro"
+          class="logotipo"
         />
-        <nav class="menu">
-          <a href="#">Destaques</a>
-          <a href="#">Sobre</a>
-          <a href="#">Serviços</a>
-          <a href="#">Contato</a>
-        </nav>
-      </div>
-      <main>
-        <section class="destaques">
-          <h2>Destaques</h2>
-          <p></p>
-        </section>
-        <section class="sobre">
-          <h2>Sobre</h2>
-          <p></p>
-        </section>
-        <section class="servicos">
-          <h2>Serviços</h2>
-          <p>Banho e Tosa</p>
-          <p>Consultas</p>
-          <p>PetShop</p>
-        </section>
-        <section class="contato">Contato</section>
-      </main>
-      <footer>
-        <p>Todos os Direitos Reservados &reg; DaschPet - 2026</p>
-      </footer>
+        <button class="btn btn-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="nav-links">
+          <li>
+            <a href="#destaques">Destaques</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#serviços">Serviços</a>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-default">Contatar</a>
+      </nav>
     </header>
+
+    <script src="./JS/script.js"></script>
   </body>
 </html>
