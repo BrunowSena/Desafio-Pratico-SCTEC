@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppin", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -12,6 +12,11 @@
   --color-yellow: #f0c808;
   --color-light-blue: #07a0c3;
   --color-dark-blue: #086788;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
 }
 
 .btn {
@@ -34,9 +39,9 @@
   text-decoration: none;
 
   &:hover {
-      color: var(--color-dark-blue);
-      border: 1px solid var(--color-dark-blue);
-    }
+    color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark-blue);
+  }
 }
 
 header {
@@ -100,7 +105,6 @@ ul {
 
 @media (min-width: 769px) {
   header {
-
     border-radius: 10px;
 
     .navbar {
@@ -121,8 +125,43 @@ ul {
 
       .btn-default {
         display: block;
-
       }
     }
   }
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  background-color: var(--color-yellow);
+  border-radius: 10px;
+
+  span {
+    font-weight: 600;
+  }
+
+  .dachshund1 {
+    width: 200px;
+    justify-content: center;
+    position: end;
+  }
+}
+
+.pilares-daschpet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pilar {
+  align-items: center;
+  background-color: var(--color-offwhite);
+  border-radius: 10px;
+  margin: 5px;
+  width: 450px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
 }
