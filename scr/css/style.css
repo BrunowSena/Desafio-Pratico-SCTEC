@@ -14,11 +14,6 @@
   --color-dark-blue: #086788;
 }
 
-h1 {
-  font-size: 20px;
-  text-align: center;
-}
-
 .btn {
   padding: 10px 20px;
   border: none;
@@ -61,7 +56,7 @@ header {
 }
 
 .logotipo {
-  width: 200px;
+  width: 150px;
 }
 
 ul {
@@ -71,7 +66,7 @@ ul {
   gap: 0.5rem;
   width: 100%;
   position: absolute;
-  top: 120px;
+  top: 99px;
   background-color: var(--color-yellow);
   left: 0;
   padding: 1rem;
@@ -79,6 +74,7 @@ ul {
   &.show {
     display: flex;
     border-radius: 0px 0px 10px 10px;
+    margin-bottom: 5px;
   }
 
   li {
@@ -130,38 +126,139 @@ ul {
   }
 }
 
-#container {
-  display: flex;
+/* Seção Des */
+
+#destaques {
+  display: flexbox;
+  flex-direction: column;
   justify-content: center;
-  padding: 5px;
+  padding: 12px;
   margin: 5px;
+  height: 70vh;
+  justify-items: center;
   background-color: var(--color-yellow);
   border-radius: 10px;
+  border: solid black 1px;
+}
 
-  span {
-    font-weight: 600;
-  }
-
-  .dachshund1 {
-    width: 200px;
-    justify-content: center;
-    position: end;
-  }
+h1 {
+  font-size: 22px;
+  text-align: center;
 }
 
 .pilares-daschpet {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 5px;
+  gap: 15px;
 }
 
 .pilar {
-  align-items: center;
+  align-content: center;
+  border: black solid 1px;
   background-color: var(--color-offwhite);
   border-radius: 10px;
-  margin: 5px;
+  padding: 10px;
   width: 450px;
-  height: 100px;
-  text-align: center;
+  height: 120px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.img-destaques {
+  display: flex;
   justify-content: center;
+}
+
+.dachshund1 {
+  width: 170px;
+  bottom: 100px;
+}
+
+/* Seção Sobre */
+
+#sobre {
+  background-color: var(--color-yellow);
+  border: solid black 1px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 40px 12px 40px 12px;
+  text-align: center;
+}
+
+/* Seção Serciços */
+
+#servicos {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-yellow);
+  border: solid black 1px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 40px 12px 40px 12px;
+  text-align: center;
+
+  gap: 20px;
+
+  .icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 45px;
+  }
+
+  i {
+    font-size: 2em;
+  }
+}
+
+/* Seção Contato */
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-yellow);
+  margin: 5px;
+  margin-top: 15px;
+  padding: 40px 12px 40px 12px;
+  border: solid black 1px;
+  border-radius: 10px;
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  input {
+    border-radius: 5px;
+    height: 34px;
+  }
+
+  .btn-enviar-dados {
+    height: 34px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--color-light-blue);
+
+    &:hover {
+      color: white;
+      background-color: var(--color-dark-blue);
+      border-bottom: 1px solid var(--color-dark-blue);
+      border: solid black 1px;
+    }
+  }
 }
