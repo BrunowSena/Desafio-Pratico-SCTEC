@@ -2,36 +2,32 @@
 
 # DaschPet - Landing Page
 
-Este é o repositório do site oficial da **DaschPet**, um petshop especializado em cuidados para cães da raça Dachshund (Salsichinhas). O projeto foi estruturado com foco em semântica, acessibilidade e design responsivo para destacar os diferenciais da marca no mercado.
+Este é o repositório do site oficial da **DaschPet**, um projeto didático de um petshop especializado em cuidados para cães da raça Dachshund (Salsichinhas). O projeto foi estruturado com foco em semântica, acessibilidade e design responsivo (mobile first) para destacar os diferenciais da marca no mercado.
 Este Projeto Nasceu da paixão pela raça Dachshund, e também como homenagem ao meu fiel escudeiro "Luke"!
 
-# Sobre o Projeto
+## Tecnologias e Recursos
 
-O site serve como o cartão de visitas digital da DaschPet, apresentando a expertise da equipe em lidar com a fisiologia única dos "salsichas", além de listar serviços e oferecer um canal direto de contato para os tutores.
+- **HTML5:** Estrutura semântica (Header, Main, Sections, Footer).
+- **CSS3:** Estilização avançada com foco em responsividade (Mobile-First).
+- **JavaScript:** Lógica de validação de formulário e manipulação do DOM.
+- **Font Awesome (v7.0.1):** Iconografia completa para serviços, formulário e dados de contato.
+- **Google Fonts:** - `Fredoka`: Estilo amigável e moderno para títulos.
+  - `Space Mono`: Tipografia técnica para destaques específicos.
 
-# Tecnologias e Recursos
+## Lógica e Funcionalidades
 
-- **HTML5:** Estrutura semântica completa (Header, Main, Sections, Footer).
-- **CSS3:** Estilização externa via `style.css` (incluindo layouts para mobile).
-- **JavaScript:** Integração de lógica de comportamento via `script.js`.
-- **Font Awesome (v7.0.1):** Ícones vetoriais para navegação e serviços.
-- **Google Fonts:**
-  - `Fredoka`: Para um visual amigável e arredondado.
-  - `Space Mono`: Para elementos que exigem um toque moderno e técnico.
+### 1. Sistema de Agendamento (Formulário)
+Localizado na seção `#atendimento`, o formulário de contato utiliza uma função de validação personalizada no arquivo `script.js`:
+- **Validação de Campos:** Checa obrigatoriedade e comprimento de caracteres (Nome: 3-50 / Email: 5-70).
+- **Regex:** Valida o formato de e-mail para garantiro preenchimento correto.
+- **Prevenção de Refresh:** Utiliza `event.preventDefault()`;
 
-# Estrutura de Seções
-
-# Site Dividido em:
-
-1.  **Header:** Navbar fixa com menu mobile (hamburguer) e botão de CTA rápido.
-2.  **Destaques:** Apresentação visual dos 3 pilares fundamentais:
-    - Expertise Anatômica.
-    - Ambiente Low-Entry (Rampas e acessos).
-    - Carinho Sob Medida.
-3.  **Sobre a DaschPet:** Seção institucional contando os 5 anos de história e marca de 1.200 clientes.
-4.  **Serviços:** Lista de serviços principais (Banho e Tosa, Consultas e PetShop) com representação por ícones.
-5.  **Contato:** Formulário interativo com validação de campos (Nome, E-mail e Telefone).
-6.  **Footer:** Informações de direitos autorais.
+### 2. Estrutura do Site
+- **Call to Action (CTA):** Banner inicial focado em conversão imediata para agendamentos.
+- **Diferenciais (Destaques):** Explicação visual da Expertise Anatômica, Ambiente Low-Entry e Carinho Sob Medida.
+- **Institucional (Sobre):** História da marca e prova social (1.200+ clientes).
+- **Serviços:** Grid iconográfico com os principais tratamentos oferecidos.
+- **Central de Atendimento:** Divisão entre formulário interativo e dados físicos (Localização em Indaial-SC, E-mail e Telefone).
 
 # Identidade Visual
 

@@ -105,7 +105,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-items: center ;
+  justify-items: center;
   align-items: center;
   background-color: var(--color-yellow);
   margin: 15px 5px 15px 5px;
@@ -130,8 +130,6 @@ ul {
     border: 1px solid var(--color-dark-blue);
     color: var(--color-offwhite);
   }
-
-
 }
 
 /* Seção Destaques */
@@ -140,9 +138,9 @@ ul {
   display: flexbox;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
   padding: 12px;
   margin: 5px;
-  justify-items: center;
   background-color: var(--color-yellow);
   border-radius: 10px;
   border: solid black 1px;
@@ -176,11 +174,6 @@ ul {
 
 span {
   font-weight: 700;
-}
-
-.img-destaques {
-  display: flex;
-  justify-content: center;
 }
 
 .dachshund1 {
@@ -303,6 +296,26 @@ span {
 
 .inputgroup i {
   font-size: 30px;
+}
+
+.informacoesdecontato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.informacoesdecontato h1 {
+  margin-top: 30px;
+}
+
+.informacoesdecontato p {
+  display: flex;
+  align-items: center;
+}
+
+.informacoesdecontato i {
+  font-size: 2em;
 }
 
 footer {
@@ -466,5 +479,15 @@ footer h2 {
     height: 50%;
     border: solid black 1px;
     border-radius: 10px;
+  }
+
+  #atendimento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .informacoesdecontato h1 {
+    margin-top: 0px;
   }
 }
