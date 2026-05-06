@@ -8,4 +8,15 @@ mobileBtn.addEventListener("click", () => {
 });
 
 
-//
+//Interação do Formulário
+const formElemento = document.querySelector("form");
+const inputsElemento = document.querySelectorAll("input");
+
+formElemento.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  inputsElemento.forEach(function(input) {
+    console.log(input.value);
+  })
+});
+

@@ -38,16 +38,28 @@
             <a href="#destaques">Destaques</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
+            <a href="#atendimento">Contato</a>
           </li>
         </ul>
-        <a href="#" class="btn btn-default">Contatar</a>
+        <a href="#atendimento" class="btn btn-default">Contatar</a>
       </nav>
     </header>
     <!-- MAIN -->
     <main>
+      <section class="calltoaction">
+        <p>
+          O PetShop <span>nº 1</span> quando o assunto é cuidar do seu grande
+          amigo.
+        </p>
+        <p>
+          Dos cuidados com a pele ao alívio na coluna, temos tudo que se
+          <span>Dachshund</span> precisa!
+        </p>
+        <p>Agende já seu atendimento</p>
+        <a href="#atendimento">Agendar Atendimento</a>
+      </section>
       <section id="destaques">
-        <h1>Destaques</h1>
+        <h1>Oque nos Diferencia da Concorrência?</h1>
         <div class="pilares-daschpet">
           <p class="pilar">
             <span>Expertise Anatômica: </span><br />
@@ -64,30 +76,22 @@
             Atendimento humanizado e paciente, focado no temperamento corajoso e
             leal do Dachshund.
           </p>
-        </div>
-        <div class="img-destaques">
           <img src="./scr/img/dachshund.png" alt="" class="dachshund1" />
-          <div class="containerimg">
-            <img
-              src="./scr/img/destaqueFoto1.png"
-              alt="Imagem que descreve o conhecimento anatômico da raça, como a coluna por exemplo"
-              class="destaquesFoto1"
-            />
-          </div>
-          <div class="containerimg">
-            <img
-              src="./scr/img/destaquesFoto2.png"
-              alt="Imagem que descreve o ambiente da DaschPet"
-              class="destaquesFoto2"
-            />
-          </div>
-          <div class="containerimg">
-            <img
-              src="./scr/img/destaquesFoto3.png"
-              alt="Imagem que demostra o carinho dos funcionários"
-              class="destaquesFoto3"
-            />
-          </div>
+          <img
+            src="./scr/img/destaqueFoto1.png"
+            alt="Imagem que descreve o conhecimento anatômico da raça, como a coluna por exemplo"
+            class="destaquesFoto1"
+          />
+          <img
+            src="./scr/img/destaquesFoto2.png"
+            alt="Imagem que descreve o ambiente da DaschPet"
+            class="destaquesFoto2"
+          />
+          <img
+            src="./scr/img/destaquesFoto3.png"
+            alt="Imagem que demostra o carinho dos funcionários"
+            class="destaquesFoto3"
+          />
         </div>
       </section>
       <section id="sobre">
@@ -127,14 +131,30 @@
           </p>
         </div>
       </section>
-      <section id="contato">
-        <h1>Contato</h1>
-        <form class="formulario">
-          <input id="nome" type="text" placeholder="Seu Nome" required />
-          <input id="email" type="email" placeholder="Seu email" required />
-          <input id="telefone" type="tel" placeholder="Telefone" />
-          <button class="btn-enviar-dados">Salvar</button>
-        </form>
+      <section id="atendimento">
+        <div>
+          <h1>Solicitar Atendimento</h1>
+          <form class="formulario">
+            <div class="inputgroup">
+              <span><i class="fa-solid fa-user"></i></span
+              ><input id="nome" type="text" placeholder="Seu Nome" required />
+            </div>
+            <div class="inputgroup">
+              <span><i class="fa-solid fa-at"></i></span
+              ><input
+                id="email"
+                type="email"
+                placeholder="Seu email"
+                required
+              />
+            </div>
+            <div class="inputgroup">
+              <span><i class="fa-solid fa-phone"></i></span
+              ><input id="telefone" type="tel" placeholder="Telefone" />
+            </div>
+            <button class="btn-enviar-dados">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

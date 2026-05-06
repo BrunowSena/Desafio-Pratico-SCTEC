@@ -99,6 +99,41 @@ ul {
   display: none;
 }
 
+/*Seção Call to Action*/
+
+.calltoaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center ;
+  align-items: center;
+  background-color: var(--color-yellow);
+  margin: 15px 5px 15px 5px;
+  padding: 12px;
+  font-size: 25px;
+  text-align: center;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.calltoaction a {
+  text-decoration: none;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--color-light-blue);
+  border: solid black 1px;
+  border-radius: 10px;
+  color: var(--color-offwhite);
+
+  &:hover {
+    background-color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark-blue);
+    color: var(--color-offwhite);
+  }
+
+
+}
+
 /* Seção Destaques */
 
 #destaques {
@@ -113,7 +148,7 @@ ul {
   border: solid black 1px;
 }
 
-h1 {
+#destaques h1 {
   font-size: 22px;
   text-align: center;
   margin-bottom: 10px;
@@ -123,6 +158,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-items: center;
+  justify-content: center;
   text-align: center;
   margin: 5px;
   gap: 15px;
@@ -148,6 +184,7 @@ span {
 }
 
 .dachshund1 {
+  display: flex;
   width: 170px;
   bottom: 100px;
 }
@@ -210,11 +247,10 @@ span {
 
 /* Seção Contato */
 
-#contato {
+#atendimento {
   border: 1px solid black;
   border-radius: 10px;
   padding: 40px 12px 40px 12px;
-
   margin: 15px 5px 15px 5px;
   display: flex;
   flex-direction: column;
@@ -222,7 +258,7 @@ span {
   background-color: var(--color-yellow);
 }
 
-#contato h1 {
+#atendimento h1 {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -257,6 +293,16 @@ span {
 
 .btn-enviar-dados:hover {
   background-color: var(--color-dark-blue);
+}
+
+.inputgroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.inputgroup i {
+  font-size: 30px;
 }
 
 footer {
@@ -317,9 +363,9 @@ footer h2 {
   }
 
   .pilares-daschpet {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
     text-align: center;
     margin: 5px;
     gap: 10px;
@@ -352,16 +398,6 @@ footer h2 {
     bottom: 100px;
   }
 
-  .containerimg {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    margin: 5px;
-    gap: 10px;
-    height: 300px;
-  }
-
   .destaquesFoto1 {
     display: flex;
     align-content: center;
@@ -369,7 +405,7 @@ footer h2 {
     background-color: var(--color-offwhite);
     border-radius: 10px;
     padding: 10px;
-    width: auto;
+    width: 70%;
     height: auto;
   }
 
@@ -380,7 +416,7 @@ footer h2 {
     background-color: var(--color-offwhite);
     border-radius: 10px;
     padding: 10px;
-    width: auto;
+    width: 70%;
     height: auto;
   }
 
@@ -391,7 +427,7 @@ footer h2 {
     background-color: var(--color-offwhite);
     border-radius: 10px;
     padding: 10px;
-    width: auto;
+    width: 70%;
     height: auto;
   }
 
@@ -406,7 +442,6 @@ footer h2 {
     padding: 40px 12px 40px 12px;
     text-align: center;
   }
-  
 
   .sobreconteudo {
     display: flex;
@@ -414,7 +449,6 @@ footer h2 {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-     
   }
 
   .sobreconteudo p {
